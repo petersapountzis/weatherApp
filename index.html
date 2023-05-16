@@ -38,15 +38,16 @@
     </div>
 
     <script>
-      const apiKey = "4348e5035f1302afcb66ce12ea1fa04";
-      const apiUrl =
-        "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=";
+      const apiKey = "4348e5035f1302afcb66ce12ea1fa04b";
+      const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&q=";
 
       const searchBox = document.querySelector(".search input");
       const searchBtn = document.querySelector(".search button");
 
       async function checkWeather(city) {
-        const response = await fetch(apiUrl + city + `&appid={apiKey}`);
+        const response = await fetch(
+          apiUrl + city + `&appid=${apiKey}` + `&units=metric`
+        );
 
         if (response.status == 404) {
           document.querySelector(".weather").style.display = "none";
