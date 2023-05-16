@@ -36,9 +36,8 @@
         </div>
       </div>
     </div>
-
+    <script src="config.js"></script>
     <script>
-      const apiKey = "4348e5035f1302afcb66ce12ea1fa04b";
       const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&q=";
 
       const searchBox = document.querySelector(".search input");
@@ -46,7 +45,7 @@
 
       async function checkWeather(city) {
         const response = await fetch(
-          apiUrl + city + `&appid=${apiKey}` + `&units=metric`
+          apiUrl + city + `&appid=${apiKey}` + `&units=imperial`
         );
 
         if (response.status == 404) {
@@ -68,7 +67,7 @@
           } else if (data.weather[0].main == "Rain") {
             document.querySelector(".weather-icon").src = "images/rain.png";
           } else if (data.weather[0].main == "Clear") {
-            document.querySelector(".weather-icon").src = "images/sun.png";
+            document.querySelector(".weather-icon").src = "images/clear.png";
           } else if (data.weather[0].main == "Snow") {
             document.querySelector(".weather-icon").src = "images/snow.png";
           } else if (data.weather[0].main == "Drizzle") {
