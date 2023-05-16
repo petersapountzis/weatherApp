@@ -1,9 +1,9 @@
 # weatherApp
 
-# Description
+## Description
 This is a weather app that provides current weather information based on the user's location. The app utilizes the OpenWeatherMap API to retrieve weather data.
 
-# Features
+## Features
 Current weather conditions: The app displays the current temperature, weather description, humidity, wind speed, and cloud coverage.
 Location-based: The app automatically detects the user's location to provide accurate weather information.
 User-friendly interface: The app has a clean and intuitive interface for easy navigation and readability.
@@ -15,7 +15,7 @@ JavaScript: Interaction with the OpenWeatherMap API and dynamic content renderin
 Getting Started
 To use the weather app on your local machine, follow these steps:
 
-# Clone the repository: 
+## Clone the repository: 
 git clone https://github.com/your-username/your-repo.git
 
 Navigate to the project directory: cd your-repo
@@ -23,7 +23,7 @@ Open the index.html file in your preferred web browser.
 Configuration
 To configure the app with your OpenWeatherMap API key, follow these steps:
 
-# Sign up on the OpenWeatherMap website to obtain an API key.
+## Sign up on the OpenWeatherMap website to obtain an API key.
 In the project directory, create a file named config.js.
 Inside config.js, add the following code:
 javascript
@@ -38,7 +38,7 @@ To switch between different units of measurement, use the provided unit conversi
 License
 This project is licensed under the MIT License.
 
-# Contact
+## Contact
 For any questions or inquiries, please contact peter.sapountzis@gmail.com.
 
 Feel free to customize this README file according to your specific weather app's requirements.
